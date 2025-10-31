@@ -150,7 +150,7 @@ permalink: /Aboutus/
     </p>
 
     <div class="actions">
-      <a class="btn btn--ghost" href="https://www.linkedin.com/in/beatriz-rodriguez-hernandez/" target="_blank">Read more</a>
+      <a class="btn btn--ghost" href="https://www.linkedin.com/in/beatriz-rodr%C3%ADguez-hern%C3%A1ndez/" target="_blank">Read more</a>
       <a class="btn btn--primary" href="mailto:scatteringcimarron@gmail.com">Contact</a>
     </div>
   </article>
@@ -184,7 +184,7 @@ permalink: /Aboutus/
     </p>
 
     <div class="actions">
-      <a class="btn btn--ghost" href="https://www.linkedin.com/in/duvier-suarez-fontanella/" target="_blank">Read more</a>
+      <a class="btn btn--ghost" href="https://www.linkedin.com/in/duvier-fontanella/" target="_blank">Read more</a>
       <a class="btn btn--primary" href="mailto:scatteringcimarron@gmail.com">Contact</a>
     </div>
   </article>

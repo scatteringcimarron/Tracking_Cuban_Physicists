@@ -236,7 +236,7 @@ permalink: /Aboutus/
           <h3 id="modal-name">Name</h3>
           <div class="meta" id="modal-role">Role</div>
           <div id="modal-bio"></div>
-          <div style="margin-top:8px; display:flex; gap:8px;">
+          <div style="margin-top:4px; display:flex; gap:4px;">
             <a id="modal-email" class="btn btn--primary" href="#">Contact</a>
             <button id="modal-close" class="btn btn--ghost">Close</button>
           </div>

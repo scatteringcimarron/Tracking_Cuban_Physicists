@@ -13,6 +13,10 @@ If you would like to learn more about the project’s scope, methods, and goals,
 
 **If you are a Cuban physicist, we warmly invite you to contribute to the project by completing its current [survey](https://docs.google.com/forms/d/e/1FAIpQLSfGiiMZC318qADo4sACnMVblrxAcXENCLykBp2Od84bQNqNnA/viewform).**
 
-<p style="text-align:center; margin-top:24px;">
-  <img src="https://visitorbadge.io/status?path=scatteringcimarron.welcome&label=Page%20views&style=flat&color=ff7a59" alt="Page views for Welcome page">
+<!-- ===== Simple functional page views counter ===== -->
+<p style="text-align:center; margin-top:28px;">
+  <img 
+    src="https://visitorbadge.io/status?path=scatteringcimarron.welcome&label=Page%20views&style=flat&color=ff7a59" 
+    alt="Page views for Welcome page"
+  >
 </p>

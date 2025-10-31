@@ -13,19 +13,33 @@ If you would like to learn more about the project’s scope, methods, and goals,
 
 **If you are a Cuban physicist, we warmly invite you to contribute to the project by completing its current [survey](https://docs.google.com/forms/d/e/1FAIpQLSfGiiMZC318qADo4sACnMVblrxAcXENCLykBp2Od84bQNqNnA/viewform).**
 
-<!-- ===== Page views counter ===== -->
+<!-- ===== Page views counter (CountAPI with automatic fallback) ===== -->
 <p id="page-views" style="text-align:center; margin-top:28px; font-size:0.95rem; color:#555;">
   👁️ Loading views...
 </p>
 
 <script>
-  // Simple view counter using CountAPI
-  fetch('https://api.countapi.xyz/hit/scatteringcimarron/welcome')
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('page-views').textContent = `👁️ ${data.value} views`;
-    })
-    .catch(() => {
-      document.getElementById('page-views').textContent = '👁️ Views unavailable';
-    });
+  (async () => {
+    const NS = 'scatteringcimarron';   // cambia si quieres separar entornos
+    const KEY = 'welcome';              // único por página
+    const ENDPOINT = 'https://api.countapi.xyz';
+    const el = document.getElementById('page-views');
+
+    try {
+      // 1) Crear la clave si no existe (no rompe si ya existe)
+      await fetch(`${ENDPOINT}/create?namespace=${encodeURIComponent(NS)}&key=${encodeURIComponent(KEY)}&value=0`, { mode: 'cors' }).catch(() => {});
+      // 2) Incrementar contador y mostrar
+      const res = await fetch(`${ENDPOINT}/hit/${encodeURIComponent(NS)}/${encodeURIComponent(KEY)}`, { mode: 'cors' });
+      if (!res.ok) throw new Error('CountAPI not ok: ' + res.status);
+      const data = await res.json();
+      el.textContent = `👁️ ${data.value} views`;
+    } catch (err) {
+      // 3) Fallback: badge estático para que siempre se vea algo
+      el.innerHTML = `
+        <img src="https://visitorbadge.io/status?path=${encodeURIComponent(NS + '.' + KEY)}&label=Page%20views&style=flat&color=ff7a59"
+             alt="Page views for Welcome page">
+      `;
+    }
+  })();
 </script>
+

@@ -185,7 +185,7 @@ permalink: /Aboutus/
 
     <div class="actions">
       <button class="btn btn--ghost" data-open="bio-bety">Read more</button>
-      <a class="btn btn--primary" href="mailto:betty@example.com">Contact</a>
+      <a class="btn btn--primary" href="mailto:scatteringcimarron@gmail.com">Contact</a>
     </div>
   </article>
 
@@ -202,7 +202,7 @@ permalink: /Aboutus/
 
     <div class="actions">
       <button class="btn btn--ghost" data-open="bio-gretel">Read more</button>
-      <a class="btn btn--primary" href="mailto:gretel@example.com">Contact</a>
+      <a class="btn btn--primary" href="mailto:scatteringcimarron@gmail.com">Contact</a>
     </div>
   </article>
 
@@ -219,7 +219,7 @@ permalink: /Aboutus/
 
     <div class="actions">
       <button class="btn btn--ghost" data-open="bio-du">Read more</button>
-      <a class="btn btn--primary" href="mailto:duvier@example.com">Contact</a>
+      <a class="btn btn--primary" href="mailto:scatteringcimarron@gmail.com">Contact</a>
     </div>
   </article>
 </div>
@@ -236,7 +236,7 @@ permalink: /Aboutus/
           <h3 id="modal-name">Name</h3>
           <div class="meta" id="modal-role">Role</div>
           <div id="modal-bio"></div>
-          <div style="margin-top:14px; display:flex; gap:8px;">
+          <div style="margin-top:8px; display:flex; gap:8px;">
             <a id="modal-email" class="btn btn--primary" href="#">Contact</a>
             <button id="modal-close" class="btn btn--ghost">Close</button>
           </div>

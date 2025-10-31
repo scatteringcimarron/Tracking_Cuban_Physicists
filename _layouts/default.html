@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title | default: "Scattering Cimarrón – Tracking Cuban Physicists" }}</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f7f6f3;
+      --text: #0b1220;
+      --accent: #a45b3c;
+      --nav-bg: #ffffff;
+      --border: rgba(0,0,0,0.08);
+      --shadow: rgba(0,0,0,0.08);
+      --radius: 12px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1724;
+        --text: #e6eef8;
+        --accent: #ff7a59;
+        --nav-bg: #0b1220;
+        --border: rgba(255,255,255,0.1);
+        --shadow: rgba(0,0,0,0.4);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    /* --- NAVIGATION --- */
+    nav {
+      background-color: var(--nav-bg);
+      padding: 30px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 240px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-right: 1px solid var(--border);
+      box-shadow: 2px 0 8px var(--shadow);
+      transition: transform 0.3s ease;
+      z-index: 999;
+    }
+
+    .nav-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .nav-logo {
+      background: var(--accent);
+      color: #fff;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-family: 'PT Serif', serif;
+      font-size: 1.1rem;
+    }
+
+    .nav-title {
+      font-family: 'PT Serif', serif;
+      font-weight: 700;
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    .nav-subtitle {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 4px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      padding: 10px 12px;
+      border-radius: var(--radius);
+      margin: 4px 0;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    nav a:hover {
+      background-color: var(--accent);
+      color: #fff;
+    }
+
+    .nav-links {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-footer {
+      font-size: 0.85rem;
+      color: #777;
+      border-top: 1px solid var(--border);
+      padding-top: 10px;
+    }
+
+    /* --- MAIN --- */
+    main {
+      margin-left: 260px;
+      padding: 60px 40px;
+      max-width: 900px;
+      transition: margin 0.3s;
+    }
+
+    .site-header {
+      margin-bottom: 40px;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 10px;
+    }
+
+    .project-title {
+      font-family: 'PT Serif', serif;
+      font-size: 2.2em;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .project-subtitle {
+      font-size: 1.1em;
+      color: #777;
+      margin-top: 5px;
+    }
+
+    h1, h2, h3 {
+      font-family: 'PT Serif', serif;
+      color: var(--text);
+      margin-top: 30px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 20px 0;
+      font-size: 0.9em;
+      color: #888;
+      border-top: 1px solid var(--border);
+    }
+
+    /* --- BUTTONS --- */
+    .menu-toggle {
+      display: none;
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      background-color: var(--accent);
+      color: #fff;
+      border: none;
+      font-size: 1.4em;
+      padding: 8px 12px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px var(--shadow);
+      cursor: pointer;
+      z-index: 1100;
+    }
+
+    /* --- MOBILE --- */
+    @media (max-width: 900px) {
+      nav {
+        transform: translateX(-100%);
+      }
+      nav.open {
+        transform: translateX(0);
+      }
+      .menu-toggle {
+        display: block;
+      }
+      main {
+        margin-left: 0;
+        padding: 80px 20px;
+      }
+      .site-header {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Botón menú móvil -->
+  <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('open')">
+    ☰
+  </button>
+
+  <nav>
+    <div>
+      <div class="nav-header">
+        <div class="nav-logo">SC</div>
+        <div>
+          <h1 class="nav-title">Scattering Cimarrón</h1>
+          <div class="nav-subtitle">Tracking Cuban Physicists</div>
+        </div>
+      </div>
+
+      <div class="nav-links">
+        <a href="{{ site.baseurl }}/">Home</a>
+        <a href="{{ site.baseurl }}/Project/">Project Overview</a>
+        <a href="{{ site.baseurl }}/Promo_2010_2024/">FF–UH 2010–2024</a>
+        <a href="{{ site.baseurl }}/survey/">Survey</a>
+        <a href="{{ site.baseurl }}/Aboutus/">About Us</a>
+      </div>
+    </div>
+
+    <div class="nav-footer">
+      &copy; {{ "now" | date: "%Y" }} Scattering Cimarrón<br>
+      <a href="https://github.com/tu-usuario/tu-repo" target="_blank" style="color: var(--accent); text-decoration: none;">View on GitHub</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="site-header">
+      <div class="project-title">Scattering Cimarrón</div>
+      <div class="project-subtitle">Tracking Cuban Physicists</div>
+    </div>
+
+    {{ content }}
+
+    <footer>
+      &copy; {{ "now" | date: "%Y" }} Scattering Cimarrón – All Rights Reserved
+    </footer>
+  </main>
+
+  <script>
+    // Cierra el menú al hacer clic fuera en móviles
+    document.addEventListener('click', e => {
+      const nav = document.querySelector('nav');
+      const toggle = document.querySelector('.menu-toggle');
+      if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+        nav.classList.remove('open');
+      }
+    });
+  </script>
+</body>
+</html>

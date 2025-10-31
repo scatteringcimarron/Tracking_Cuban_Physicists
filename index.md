@@ -17,6 +17,6 @@ If you would like to learn more about the project’s scope, methods, and goals,
 <p style="text-align:center; margin-top:28px;">
   <img 
     src="https://visitorbadge.io/status?path=scatteringcimarron.github.io%2FTracking_Cuban_Physicists%2Fwelcome&label=Page%20views&style=flat&color=ff7a59" 
-    alt="Page views for Welcome page"
+    alt="Page views"
   >
 </p>

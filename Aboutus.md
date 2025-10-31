@@ -229,9 +229,6 @@ permalink: /Aboutus/
   <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true">
     <div class="modal" id="modal-content">
       <div class="modal-grid">
-        <div class="photo" id="modal-photo">
-          <img src="" alt="">
-        </div>
         <div>
           <h3 id="modal-name">Name</h3>
           <div class="meta" id="modal-role">Role</div>

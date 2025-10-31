@@ -5,7 +5,7 @@ permalink: /survey/
 ---
 
 <p align="center">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfGiiMZC318qADo4sACnMVblrxAcXENCLykBp2Od84bQNqNnA/viewform" target="_blank" style="display: inline-block; background-color: #007BFF; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 16px;">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfGiiMZC318qADo4sACnMVblrxAcXENCLykBp2Od84bQNqNnA/viewform" target="_blank" style="display: inline-block; background-color: #a45b3c; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 16px;">
     👉 Fill Out the Survey
   </a>
 </p>
@@ -39,7 +39,7 @@ If you have questions about data handling, please contact the research team at: 
 **Gracias por formar parte de esta historia.**
 
 <p align="center">
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfGiiMZC318qADo4sACnMVblrxAcXENCLykBp2Od84bQNqNnA/viewform" target="_blank" style="display: inline-block; background-color: #007BFF; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 16px;">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfGiiMZC318qADo4sACnMVblrxAcXENCLykBp2Od84bQNqNnA/viewform" target="_blank" style="display: inline-block; background-color: #a45b3c; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 16px;">
     👉 Fill Out the Survey
   </a>
 </p>

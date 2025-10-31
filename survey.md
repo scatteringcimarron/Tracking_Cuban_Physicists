@@ -4,7 +4,11 @@ title: Survey
 permalink: /survey/
 ---
 
-> ⚠️ Disclaimer: This survey is still a work in progress. Once it is finalized, we will notify everyone who wishes to participate. Your feedback will be invaluable in documenting the diverse career paths of Cuban physicists.
+<p align="center">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfGiiMZC318qADo4sACnMVblrxAcXENCLykBp2Od84bQNqNnA/viewform" target="_blank" style="display: inline-block; background-color: #007BFF; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 16px;">
+    👉 Fill Out the Survey
+  </a>
+</p>
 
 # Survey
 

@@ -1,4 +1,4 @@
-y---
+---
 layout: default
 title: Welcome
 ---
